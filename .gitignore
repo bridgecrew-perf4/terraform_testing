@@ -2,8 +2,8 @@
 *.terraform.lock.hcl
 *.tfstate
 *.tfstate.backup
-./aws/fuckOld
-./aws/.terraform
-./azure/.terraform
-./azure/tls_keys
-./ibm/.terraform
+aws/fuckOld
+aws/.terraform
+azure/.terraform
+azure/tls_keys
+ibm/.terraform
