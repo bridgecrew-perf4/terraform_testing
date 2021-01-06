@@ -1,3 +1,12 @@
+/* I'll need to install ???:
+  
+  sudo apt install python3 python3-pip
+
+  update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+  wget https://raw.githubusercontent.com/ansible-collections/azure/dev/requirements-azure.txt
+  pip install -r requirements-azure.txt --use-feature=2020-resolver 
+
+ */
 terraform {
   required_providers { //Aqui é só para dizer o que vai ser usado!!!
     azurerm = {
