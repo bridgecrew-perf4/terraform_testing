@@ -123,14 +123,14 @@ resource "tls_private_key" "testing1" {
 
 output "tls_private_key" { value = tls_private_key.testing1.private_key_pem }
 
-resource "vault_mount" "example" {
+/* resource "vault_mount" "example" {
   type = "ssh"
 }
 
 resource "vault_ssh_secret_backend_ca" "foo" {
   private_key = tls_private_key.testing1.private_key_pem
 }
-
+ */
 resource "azurerm_linux_virtual_machine" "testing1" {
   name                  = "testing1_vm"
   location              = azurerm_resource_group.testing1.location
@@ -170,6 +170,12 @@ resource "azurerm_linux_virtual_machine" "testing1" {
 }
 
 output "tls_public_key" { value = tls_private_key.testing1.public_key_openssh }
+
+
+output "teste" {
+  value = var.name_space
+}
+
 
 
 /* output "address" {
